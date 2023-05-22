@@ -2,7 +2,7 @@ import csv
 import datetime
 
 # Uma lista com as perguntas da pesquisa
-PERGUNTAS = ["Pergunta 1", "Pergunta 2", "Pergunta 3", "Pergunta 4"]
+PERGUNTAS = ["Qual é o seu modal de entrega? (Carro, Moto ou Bicicleta)", "Em qual região você trabalha como entregador?", "Quantas horas você trabalha por dia como entregador?", "Em média, quantas entregas você realiza por dia?"]
 
 # Função que recebe as respostas, a idade e o gênero do participante e adiciona a data e hora da resposta
 def adicionar_resposta(respostas, idade, genero):
@@ -11,7 +11,7 @@ def adicionar_resposta(respostas, idade, genero):
 
 # Função que escreve as respostas no arquivo CSV
 def escrever_csv(respostas):
-    with open('respostas.csv', mode='w', newline='') as file:  # Abre o arquivo 'respostas.csv' no modo escrita
+    with open('respostas.csv', mode='a', newline='') as file:  # Abre o arquivo 'respostas.csv' no modo escrita
         writer = csv.writer(file)  # Cria um objeto writer para escrever no arquivo
         writer.writerow(['Idade', 'Gênero'] + PERGUNTAS + ['Data e hora'])  # Escreve a linha de cabeçalho com as perguntas e data/hora
         for resposta in respostas:  # Para cada resposta:
@@ -25,7 +25,7 @@ def fazer_pesquisa():
         if idade == "00":  # Se o usuário digitar '00', interrompe o laço
             break
         genero = input("Digite o seu gênero (M/F/O): ")  # Pede o gênero do participante
-        print("Responda as seguintes perguntas com 1 (Sim), 2 (Não) ou 3 (Não sei responder):")
+        print("Responda as seguintes perguntas:")
         respostas_participante = []  # Lista vazia para armazenar as respostas do participante
         for pergunta in PERGUNTAS:  # Para cada pergunta da pesquisa:
             resposta = input(pergunta + " ")  # Pede a resposta do participante
