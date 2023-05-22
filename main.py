@@ -24,7 +24,7 @@ def fazer_pesquisa():
         idade = input("Digite a sua idade (ou 00 para sair): ")  # Pede a idade do participante
         if idade == "00":  # Se o usuário digitar '00', interrompe o laço
             break
-        genero = input("Digite o seu gênero (M/F/O): ")  # Pede o gênero do participante
+        genero = input("Digite o seu gênero (masculino/ feminino/ transgênero/ gênero-neutro/ não-binário/ agênero/ pangênero/ genderqueer/ two-spirit, terceiro gênero): ")  # Pede o gênero do participante
         print("Responda as seguintes perguntas:")
         respostas_participante = []  # Lista vazia para armazenar as respostas do participante
         for pergunta in PERGUNTAS:  # Para cada pergunta da pesquisa:
