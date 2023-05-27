@@ -2,7 +2,20 @@ import csv
 import datetime
 
 # Uma lista com as perguntas da pesquisa
-PERGUNTAS = ["Qual é o seu modal de entrega? (Carro, Moto ou Bicicleta)", "Você se sente seguro(a) ao realizar entregas com seu modal de entrega? (1 - Sim, 2 - Não, 3 - Não sei)", "Você recebe treinamento adequado para realizar entregas com seu modal de entrega? (1 - Sim, 2 - Não, 3 - Não sei)", "Você consegue atender à demanda de entregas de forma satisfatória com seu modal de entrega? (1 - Sim, 2 - Não, 3 - Não sei)", "Você enfrenta dificuldades para encontrar endereços de entrega com seu modal de entrega? (1 - Sim, 2 - Não, 3 - Não sei)", "Você acredita que o valor pago pelas entregas é justo considerando seu modal de entrega? (1 - Sim, 2 - Não, 3 - Não sei)", "Você recebe apoio adequado da equipe do iFood em caso de problemas durante as entregas com seu modal de entrega? (1 - Sim, 2 - Não, 3 - Não sei)", "Você tem acesso a equipamentos de segurança adequados para realizar as entregas com seu modal de entrega? (1 - Sim, 2 - Não, 3 - Não sei)", "Você considera o trabalho de entregador do iFood uma opção viável de renda com seu modal de entrega? (1 - Sim, 2 - Não, 3 - Não sei)", "Você recomendaria o trabalho de entregador do iFood para outras pessoas com seu modal de entrega? (1 - Sim, 2 - Não, 3 - Não sei)"]
+PERGUNTAS = [
+    "Qual é o seu modal de entrega? (Carro, Moto ou Bicicleta)",
+    "Em qual região você trabalha como entregador?",
+    "Quantas horas você trabalha por dia como entregador?",
+    "Você se sente seguro(a) ao realizar entregas com seu modal de entrega? (1 - Sim, 2 - Não, 3 - Não sei)",
+    "Você recebe treinamento adequado para realizar entregas com seu modal de entrega? (1 - Sim, 2 - Não, 3 - Não sei)",
+    "Você consegue atender à demanda de entregas de forma satisfatória com seu modal de entrega? (1 - Sim, 2 - Não, 3 - Não sei)",
+    "Você enfrenta dificuldades para encontrar endereços de entrega com seu modal de entrega? (1 - Sim, 2 - Não, 3 - Não sei)",
+    "Você acredita que o valor pago pelas entregas é justo considerando seu modal de entrega? (1 - Sim, 2 - Não, 3 - Não sei)",
+    "Você recebe apoio adequado da equipe do iFood em caso de problemas durante as entregas com seu modal de entrega? (1 - Sim, 2 - Não, 3 - Não sei)",
+    "Você tem acesso a equipamentos de segurança adequados para realizar as entregas com seu modal de entrega? (1 - Sim, 2 - Não, 3 - Não sei)",
+    "Você considera o trabalho de entregador do iFood uma opção viável de renda com seu modal de entrega? (1 - Sim, 2 - Não, 3 - Não sei)",
+    "Você recomendaria o trabalho de entregador do iFood para outras pessoas com seu modal de entrega? (1 - Sim, 2 - Não, 3 - Não sei)"
+]
 
 # Função que recebe as respostas, a idade e o gênero do participante e adiciona a data e hora da resposta
 def adicionar_resposta(respostas, idade, genero):
