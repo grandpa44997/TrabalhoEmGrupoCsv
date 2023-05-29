@@ -3,9 +3,7 @@ import datetime
 
 # Uma lista com as perguntas da pesquisa
 PERGUNTAS = [
-    "Qual é o seu modal de entrega? (Carro, Moto ou Bicicleta)",
-    "Em qual região você trabalha como entregador?",
-    "Quantas horas você trabalha por dia como entregador?",
+    "Qual é o seu modal de entrega? (1 - Carro, 2 - Moto ou 3 - Bicicleta)
     "Você se sente seguro(a) ao realizar entregas com seu modal de entrega? (1 - Sim, 2 - Não, 3 - Não sei)",
     "Você recebe treinamento adequado para realizar entregas com seu modal de entrega? (1 - Sim, 2 - Não, 3 - Não sei)",
     "Você consegue atender à demanda de entregas de forma satisfatória com seu modal de entrega? (1 - Sim, 2 - Não, 3 - Não sei)",
